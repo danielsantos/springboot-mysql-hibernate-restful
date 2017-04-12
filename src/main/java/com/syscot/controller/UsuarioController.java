@@ -36,12 +36,5 @@ public class UsuarioController {
     public void excluir(@PathVariable String id) {
         service.excluir(id);
     }
-
-    @RequestMapping(method = RequestMethod.POST, value="/usuarios/inserir")
-    public void inserir(@RequestParam(value="nome") String nome) {
-        Usuario u = new Usuario();
-        u.setNome(nome);
-        service.inserir(u);
-    }
-
+	
 }
